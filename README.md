@@ -1,3 +1,3 @@
 # У аппарата
 
-https://lizakubrakova.github.io
+https://lizakubrakova.github.io/LizaKubrakova/

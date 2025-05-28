@@ -8,7 +8,8 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss",
-          "skipTests": true
+          "skipTests": true,
+					"changeDetection": "OnPush"
         },
         "@schematics/angular:class": {
           "skipTests": true
@@ -70,6 +71,22 @@
                 }
               ],
               "outputHashing": "all"
+            },
+						"github": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all",
+              "baseHref": "/ng-scroll/"
             },
             "development": {
               "optimization": false,
