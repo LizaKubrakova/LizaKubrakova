@@ -85,8 +85,7 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all",
-              "baseHref": "/LizaKubrakova/"
+              "outputHashing": "all"
             },
             "development": {
               "optimization": false,
