@@ -73,8 +73,7 @@
 	margin: 0 auto;
 	z-index: 1;
 	padding: 1rem;
-	margin-top: clamp(100px, 50vh, 500px);
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 50%);
 }
 
 .inner-content::before {
