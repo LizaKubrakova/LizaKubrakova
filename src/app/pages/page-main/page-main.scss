@@ -102,6 +102,7 @@
 .video {
 	margin-top: 2rem;
 	user-select: none;
+	pointer-events: none;
 }
 
 @keyframes grow-progress {
