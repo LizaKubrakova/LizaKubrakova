@@ -47,7 +47,7 @@
   right: 0;
   user-select: none;
   z-index: 4;
-	transform: translateY((calc((var(--main-container-height) - 120%) * var(--y))));
+	transform: translateY((calc((var(--main-container-height) - 120%) * var(--y, 0))));
 }
 
 .content {
