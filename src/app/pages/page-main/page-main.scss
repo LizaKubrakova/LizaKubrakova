@@ -66,10 +66,10 @@
 	left: 50%;
 	position: absolute;
 	display: flow-root;
-  padding: 0 20px;
   text-align: center;
   color: var(--color);
 	max-width: 400px;
+	min-width: 300px;
 	margin: 0 auto;
 	z-index: 1;
 	padding: 1rem;
