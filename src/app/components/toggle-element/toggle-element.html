@@ -1,0 +1,14 @@
+<div class="content">
+
+	<button
+		type="button"
+		(click)="toggle()"
+	>
+		{{ isVisible === true ? btnHiddenText : btnShowedText }}
+	</button>
+
+	<div class="hidden-item" [ngClass]="{ hidden: !isVisible }">
+		<ng-content></ng-content>
+	</div>
+
+</div>

@@ -9,15 +9,17 @@
           <h1>Привет, меня зовут Лиза</h1>
           <p>Я художница, и ты можешь заказать у меня картину</p>
 					<a class="order-link" href="https://t.me/epindrium" target="_blank">Заказать картину</a>
-					<video
-						class="video"
-						src="videos/cat.webm"
-						autoplay
-						muted
-						playsinline
-						loop
-						#videoElement
-					></video>
+					<toggle-element [btnShowedText]="'Показать котика'" [btnHiddenText]="'Скрыть котика'">
+						<video
+							class="video"
+							src="videos/cat.webm"
+							autoplay
+							muted
+							playsinline
+							loop
+							#videoElement
+						></video>
+					</toggle-element>
         </div>
       </div>
     </div>

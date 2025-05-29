@@ -1,0 +1,13 @@
+.content {
+	margin-top: 1rem;
+}
+
+.hidden-item {
+	height: auto;
+	transition: height var(--transitionDurationMs) var(--transitionDurationTiming);
+	overflow: hidden;
+}
+
+.hidden {
+	height: 0;
+}

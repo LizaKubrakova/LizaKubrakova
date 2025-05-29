@@ -1,8 +1,11 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core';
+import { ToggleElement } from '../../components/toggle-element/toggle-element';
 
 @Component({
   selector: 'page-main',
-  imports: [],
+  imports: [
+		ToggleElement
+	],
   templateUrl: './page-main.html',
   styleUrl: './page-main.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

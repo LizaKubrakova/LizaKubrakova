@@ -14,6 +14,7 @@ html {
 	--bgColor: white;
 	--transitionDurationMs: 0.2s;
 	--transitionDurationTiming: ease-in-out;
+	interpolate-size: allow-keywords;
 }
 
 @media (prefers-color-scheme: dark) {
