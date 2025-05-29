@@ -47,9 +47,7 @@
   right: 0;
   user-select: none;
   z-index: 4;
-
-	animation: grow-progress auto linear;
-	animation-timeline: scroll(root);
+	transform: translateY((calc((var(--main-container-height) - 120%) * var(--y))));
 }
 
 .content {
@@ -110,14 +108,4 @@
 	margin-top: 2rem;
 	user-select: none;
 	pointer-events: none;
-}
-
-@keyframes grow-progress {
-	0% {
-		transform: translateY(0);
-	}
-	100% {
-		//transform: translateY(min(calc(100vh - 100%), 900px));
-		transform: translateY((calc(var(--main-container-height) - 120%)));
-	}
 }
