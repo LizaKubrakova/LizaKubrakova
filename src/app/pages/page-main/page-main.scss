@@ -44,7 +44,7 @@
 .fixed-img {
   position: absolute;
   top: 60px;
-  right: 0;
+  right: 25px;
   user-select: none;
   z-index: 4;
 	transform: translateY((calc((var(--main-container-height) - 120%) * var(--y, 0))));
@@ -59,53 +59,85 @@
 	z-index: 6;
 }
 
-.inner-content {
-	top: 200px;
-	left: 50%;
-	position: absolute;
-	display: flow-root;
-  text-align: center;
-  color: var(--color);
-	max-width: 400px;
-	min-width: 304px;
-	margin: 0 auto;
-	z-index: 1;
-	padding: 1rem;
-	transform: translate(-50%, 0);
-}
-
-.inner-content::before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: var(--bgColor);
-	z-index: -1;
-	opacity: 0.5;
-}
-
-.order-link {
-	padding: 10px 20px;
-	font-size: 16px;
-	background-color: #ff5e5e;
-	color: var(--color);
-	border: none;
-	border-radius: 6px;
-	cursor: pointer;
-	margin-top: 20px;
-	text-decoration: none;
-	white-space: nowrap;
-}
-
-.order-link:hover {
-	background-color: #e64c4c;
-}
-
 .video {
 	margin-top: 2rem;
 	user-select: none;
 	pointer-events: none;
+}
+
+.content {
+	padding: 0 30px;
+}
+
+.title {
+	font-size: 1.8rem;
+	font-weight: 200;
+}
+
+.section-one {
+	max-width: 477px;
+	font-weight: 200;
+	margin-bottom: 8.7rem;
+}
+
+.card {
+	padding: 1.4rem;
+	background-color: rgba(94, 76, 129, 0.76);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.section-two {
+	font-weight: 300;
+	max-width: 425px;
+	width: 100%;
+	margin-left: auto;
+}
+
+.list {
+	padding: 0;
+	padding-left: 0.5rem;
+	font-weight: 300;
+}
+
+.list-item::marker {
+  content: "-";
+	display: inline-block;
+	margin-right: 0.5rem;
+}
+
+.list-item {
+	padding-left: 0.2rem;
+}
+
+.order-link {
+	background-color: rgba(74, 88, 166, 1);
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	max-width: 280px;
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 15px;
+	transition-timing-function: var(--transitionTimingFunction);
+	transition-duration: var(--transitionDurationMs);
+	transition-property: background-color;
+}
+
+.order-link:hover {
+	background-color: rgb(59, 74, 163);
+}
+
+.section-two-text {
+	font-size: 0.7rem;
+	max-width: 318px;
+	margin: 0 auto;
+}
+
+.mtb1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }

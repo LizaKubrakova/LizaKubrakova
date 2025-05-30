@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, DestroyRef, ElementRef, OnDestroy, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
 import { ToggleElement } from '../../components/toggle-element/toggle-element';
 import { SmoothScroll } from '../../services/smooth-scroll';
 
@@ -21,7 +21,6 @@ export class PageMain implements AfterViewInit, OnDestroy {
 	private _resizeObserver: ResizeObserver = this._createResizeObserver();
 
 	constructor(
-		private readonly _destroyRef: DestroyRef,
 		private readonly _smoothScroll: SmoothScroll
 	) { }
 
