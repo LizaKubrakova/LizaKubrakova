@@ -35,8 +35,10 @@ export class PageMain implements AfterViewInit, OnDestroy {
 
 	private _resizeInit(): void {
 		setTimeout(() => {
-			this._updateContainerHeight(this._mainContainer.nativeElement.offsetHeight);
-		}, 50);
+			requestAnimationFrame(() => {
+				this._updateContainerHeight(this._mainContainer.nativeElement.offsetHeight);
+			});
+		}, 0);
 		this._resizeObserver.observe(this._mainContainer.nativeElement);
 	}
 
