@@ -1,5 +1,4 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { ToggleElement } from '../../components/toggle-element/toggle-element';
 import { SmoothScroll } from '../../services/smooth-scroll';
 
 @Component({
@@ -7,9 +6,6 @@ import { SmoothScroll } from '../../services/smooth-scroll';
 	templateUrl: './page-main.html',
 	styleUrl: './page-main.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
-	imports: [
-		ToggleElement
-	],
 	providers: [
 		SmoothScroll
 	]
